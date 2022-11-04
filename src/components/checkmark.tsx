@@ -1,4 +1,4 @@
-import { styled, keyframes } from 'goober';
+import { styled, keyframes } from './styling';
 
 const circleAnimation = keyframes`
 from {
@@ -31,7 +31,7 @@ export interface CheckmarkTheme {
   secondary?: string;
 }
 
-export const CheckmarkIcon = styled('div')<CheckmarkTheme>`
+export const CheckmarkIcon = styled('div') <CheckmarkTheme>`
   width: 20px;
   opacity: 0;
   height: 20px;

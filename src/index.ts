@@ -8,6 +8,7 @@ export { Toaster } from './components/toaster';
 export { CheckmarkIcon } from './components/checkmark';
 export { ErrorIcon } from './components/error';
 export { LoaderIcon } from './components/loader';
+export { bindStyling } from "./components/styling";
 
 export { toast };
 export default toast;

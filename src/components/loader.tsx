@@ -1,4 +1,4 @@
-import { styled, keyframes } from 'goober';
+import { styled, keyframes } from './styling';
 
 const rotate = keyframes`
   from {
@@ -14,7 +14,7 @@ export interface LoaderTheme {
   secondary?: string;
 }
 
-export const LoaderIcon = styled('div')<LoaderTheme>`
+export const LoaderIcon = styled('div') <LoaderTheme>`
   width: 12px;
   height: 12px;
   box-sizing: border-box;

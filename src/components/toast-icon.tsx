@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { styled, keyframes } from 'goober';
+import { styled, keyframes } from './styling';
 
 import { Toast } from '../core/types';
 import { ErrorIcon, ErrorTheme } from './error';

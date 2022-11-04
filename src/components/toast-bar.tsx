@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { styled, keyframes } from 'goober';
+import { styled, keyframes } from './styling';
 
 import { Toast, ToastPosition, resolveValue, Renderable } from '../core/types';
 import { ToastIcon } from './toast-icon';
@@ -73,9 +73,9 @@ export const ToastBar: React.FC<ToastBarProps> = React.memo(
   ({ toast, position, style, children }) => {
     const animationStyle: React.CSSProperties = toast.height
       ? getAnimationStyle(
-          toast.position || position || 'top-center',
-          toast.visible
-        )
+        toast.position || position || 'top-center',
+        toast.visible
+      )
       : { opacity: 0 };
 
     const icon = <ToastIcon toast={toast} />;

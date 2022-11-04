@@ -1,4 +1,4 @@
-import { css, setup } from 'goober';
+import { css, setup } from './styling';
 import * as React from 'react';
 import {
   resolveValue,
@@ -52,13 +52,13 @@ const getPositionStyle = (
   const verticalStyle: React.CSSProperties = top ? { top: 0 } : { bottom: 0 };
   const horizontalStyle: React.CSSProperties = position.includes('center')
     ? {
-        justifyContent: 'center',
-      }
+      justifyContent: 'center',
+    }
     : position.includes('right')
-    ? {
+      ? {
         justifyContent: 'flex-end',
       }
-    : {};
+      : {};
   return {
     left: 0,
     right: 0,

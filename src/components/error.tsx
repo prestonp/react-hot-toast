@@ -1,4 +1,4 @@
-import { styled, keyframes } from 'goober';
+import { styled, keyframes } from './styling';
 
 const circleAnimation = keyframes`
 from {
@@ -35,7 +35,7 @@ export interface ErrorTheme {
   secondary?: string;
 }
 
-export const ErrorIcon = styled('div')<ErrorTheme>`
+export const ErrorIcon = styled('div') <ErrorTheme>`
   width: 20px;
   opacity: 0;
   height: 20px;
